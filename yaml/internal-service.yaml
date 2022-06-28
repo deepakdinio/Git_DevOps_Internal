@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: internal-service
+spec:
+  type: ClusterIP
+  selector:
+    app: Internal
+  ports:
+  - port: 7777
+    targetPort: 8082
