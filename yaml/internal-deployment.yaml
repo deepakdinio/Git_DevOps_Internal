@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: internal
-        image: deepakdinio/git_devop_internal1:2
+        image: deepakdinio/devops-bootcamp-internal:1
         resources:
           requests:
             memory: "32Mi"
