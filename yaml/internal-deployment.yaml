@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: Internal-deployment
+  name: internal-deployment
 spec:
   selector:
     matchLabels:
-      app: Internal
+      app: internal
   template:
     metadata:
       labels:
-        app: Internal
+        app: internal
     spec:
       containers:
-      - name: Internal
+      - name: internal
         image: deepakdinio/git_devop_internal1:2
         resources:
           requests:
