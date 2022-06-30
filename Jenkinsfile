@@ -18,7 +18,6 @@ pipeline {
                 echo 'Retrieve source from github' 
                 git branch: 'master',
                     url: 'https://github.com/deepakdinio/Git_DevOps_Internal.git'
-
                 echo 'showing files from repo?' 
                 sh 'ls -a'
                 echo 'install dependencies' 
